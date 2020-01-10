@@ -1,7 +1,5 @@
 Vue.component('app-counter',{
-    template: `
-        <button @click="count++">{{count}}</button>
-    `,
+    template: '#x-template-sample',
     data(){
         return{
             count:0
