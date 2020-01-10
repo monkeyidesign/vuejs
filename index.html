@@ -8,14 +8,19 @@
 <body>
 <div id="app">
     <div class="content">
-        <app-counter></app-counter>
+        <app-dev v-for="skill in devs" v-bind:name="skill"></app-dev>
+    </div>
+    <div>
+        <blog-post my_property_name="Your data hello!"></blog-post>
     </div>
 </div>
-<script type="x-template" id="x-template-sample">
-    <div>
-        <button @click="count++">{{count}}</button>
-    </div>
+
+<script type="text/x-template" id="devs-template">
+
+    <div>{{name}}</div>
+
 </script>
+
 <script src="https://unpkg.com/vue@2.6.11/dist/vue.js"></script>
 <script src="app.js"></script>
 
